@@ -18,7 +18,7 @@ export default ({ data: { allMarkdownRemark: mdRemark } }) => (
     <Seo title="Home" />
     <div>
       <h1>Yihua's Thoughts</h1>
-      <h4>{ mdRemark.totalCount }</h4>
+      <h4>{ mdRemark.totalCount } Posts</h4>
       { mdRemark.edges.map(({node}) => (
         <div key={node.id}>
           <BlogLink to={node.fields.slug}>
